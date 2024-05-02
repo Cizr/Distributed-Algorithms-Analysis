@@ -3,6 +3,8 @@
 ## Overview
 This project entails the development of a chat system comprising a server and multiple clients, each serving as nodes within the network. The server includes a Supervisor thread, while each client contains both a Controller thread and an Application thread.
 
+![image (1)](https://github.com/Cizr/Distributed-Algorithms-Analysis/assets/100844208/3e9ab4d9-11d2-4a62-9ffb-94074c1e0a7c)
+
 ## Components
 ### Supervisor Thread
 - Oversees the execution of the application.
