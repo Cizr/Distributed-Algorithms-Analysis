@@ -5,11 +5,11 @@ In a tree network, if rooted, the Minimum Finding problem can be solved by perfo
 # Algorithm
 
 ![image (4)](https://github.com/Cizr/Distributed-Algorithms-Analysis/assets/100844208/15d0fb94-2daa-4496-8940-a50adc86995f)
-# Cost : 
-M[MinF − Tree] = 3n + k' − 4
--Awake nodes: [(0, 0), (1, 1), (2, 1), (3, 1), (4, 2), (5, 2)]
--Unit of time: 2
--Number of messages sent: 5
--Minimum value found by initiator: 3
--Number of messages for minimum finding (M[MinF-Tree]): 15
--All nodes are notified that the minimum value holder is node number 1
+# Cost:
+- **M[MinF − Tree]**: 3n + k' − 4
+- **Awake nodes**: [(0, 0), (1, 1), (2, 1), (3, 1), (4, 2), (5, 2)]
+- **Unit of time**: 2
+- **Number of messages sent**: 5
+- **Minimum value found by initiator**: 3
+- **Number of messages for minimum finding (M[MinF-Tree])**: 15
+- **All nodes are notified that the minimum value holder is node number 1**
