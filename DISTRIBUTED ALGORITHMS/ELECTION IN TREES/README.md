@@ -21,17 +21,18 @@ B[Tree:ElectRoot]=2(c+logid)+c(3n+k)
 Elect Root outperforms Elect Minimum in terms of bits transmitted, providing a more detailed analysis of algorithm performance.
 
 
-verify the calculations:
-
+# verify the calculations:
 For Elect Minimum:
-
 Number of messages: 31
-Number of bits: 𝑛(𝑐+log⁡𝑖𝑑)+𝑐(2𝑛+𝑘∗−2)n(c+logid)+c(2n+k∗−2)=31(𝑐+log⁡𝑖𝑑)+𝑐(2×8+7−2)=31(𝑐+3)+𝑐(15)=31(𝑐+3)+15𝑐=31×4+15×1=124+15=139=31(c+logid)+c(2×8+7−2)=31(c+3)+c(15)=31(c+3)+15c=31×4+15×1=124+15=139
+The number of bits: 
+𝑛(𝑐+log⁡𝑖𝑑)+𝑐(2𝑛+𝑘∗−2)n(c+logid)+c(2n+k∗−2)=31
+(𝑐+log⁡𝑖𝑑)+𝑐(2×8+7−2)=31(𝑐+3)+𝑐(15)=31(𝑐+3)+15𝑐=31×4+15×1=124+15=139=31(c+logid)+c(2×8+7−2)=31(c+3)+c(15)=31(c+3)+15c=31×4+15×1=124+15=139
+
 For Elect Root:
-
 Number of messages: 33
-Number of bits: 2(𝑐+log⁡𝑖𝑑)+𝑐(3𝑛+𝑘∗−2)2(c+logid)+c(3n+k∗−2)=2(𝑐+log⁡𝑖𝑑)+𝑐(3×8+7−2)=2(𝑐+3)+𝑐(29)=2(𝑐+3)+29𝑐=2×4+29×1=8+29=37=2(c+logid)+c(3×8+7−2)=2(c+3)+c(29)=2(c+3)+29c=2×4+29×1=8+29=37
-Let's compare these calculations to the output:
+Number of bits: 2(𝑐+log⁡𝑖𝑑)+𝑐(3𝑛+𝑘∗−2)2(c+logid)+c(3n+k∗−2)=2
+(𝑐+log⁡𝑖𝑑)+𝑐(3×8+7−2)=2(𝑐+3)+𝑐(29)=2(𝑐+3)+29𝑐=2×4+29×1=8+29=37=2(c+logid)+c(3×8+7−2)=2(c+3)+c(29)=2(c+3)+29c=2×4+29×1=8+29=37
 
+Let's compare these calculations to the output:
 Elect Minimum Bits: 139
 Elect Root Bits: 73
