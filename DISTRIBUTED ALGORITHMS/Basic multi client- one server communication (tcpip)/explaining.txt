@@ -1,0 +1,43 @@
+{print_lock} # ensures that only one thread at a time can access and print to the console. 
+This helps avoid conflicts and improves the clarity of the printed messages.
+
+
+
+{client_connections = {}} #  stores the active connections with client IDs as keys and their corresponding socket connections as values
+Purp: The server needs to manage multiple client connections simultaneously when we use dictionary
+it can easily look up and interact with individual clients based on their unique identifiers (client IDs).
+Usage: When a new client connects its connection is added to this dictionary. 
+This allows the server to send responses back to specific clients by referencing their client IDs.
+
+
+
+{The client_counter} variable is used to assign unique client IDs to each connected client. 
+Structure: client_counter is a numeric variable that starts at 1. 
+It gets incremented by 1 for each new client, thereby providing a unique value for each client.
+Usage: When a new client connects the server generates a client ID by combining the string "Client " with the current value of client_counter.
+ This results in client IDs like "Client 1", "Client 2", and so on.
+
+
+
+threading.Thread(...): This creates a new thread using the Thread class from the threading module.
+target=process_messages: Specifies that the function process_messages will be the target function that the new thread runs.
+daemon=True:Daemon threads are background threads that are automatically terminated when the main program (in this case, the server) exits.
+.start(): initiates the execution of the thread causing it to begin running the process_messages function concurrently with the rest of the server.
+
+
+
+
+
+Summary:
+
+The script creates a server that handles multiple client connections concurrently.
+A mutex (print_lock) ensures synchronized printing to avoid overlapping console output.
+A message queue (message_queue) is used to store messages from clients.
+Client connections are tracked in a dictionary (client_connections) using unique client IDs.
+Separate threads are employed to handle communication with each connected client and to process messages concurrently.
+The server listens for incoming connections, assigns unique client IDs, and starts threads for communication handling.
+A daemon thread is used to process messages concurrently with the main server program.
+The script gracefully handles a keyboard interrupt, printing a shutdown message, and closes the server socket upon termination.
+
+
+

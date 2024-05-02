@@ -1,0 +1,45 @@
+Serializable Class (Voiture):
+
+Voiture is a class that implements the Serializable interface. This interface indicates that objects of this class can be serialized and deserialized.
+The class has two attributes:
+ matricule (license plate) and couleur (color).
+It has a constructor to initialize the attributes.
+
+
+Sending Object from Server to Client (Serialization):
+ after creating an instance of Voiture (V), it is serialized and sent to the client.
+
+
+
+
+
+
+
+
+
+    pickle module provides a way to serialize and deserialize objects. 
+Serialization is the process of converting a Python object into a byte stream,
+deserialization is the process of reconstructing a Python object from a byte stream.
+
+
+data = {'name': 'John', 'age': 30, 'city': 'New York'}
+serialized_data = pickle.dumps(data)
+
+
+serialized_data = b'\x80\x04\x95\x1c\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x04name\x94\x8c\x04John\x94\x8c\x03age\x94K\x1e\x8c\x04city\x94\x8c\x08New York\x94u.'
+deserialized_data = pickle.loads(serialized_data)
+
+
+
+    pickle is a Python module that provides a way to serialize and deserialize
+(serialize means converting an object into a byte stream, and deserialize means reconstructing the object from the byte stream) 
+allowing them to be easily stored to or read from a file or transmitted over a network.
+
+pickle.dumps:} It stands for "pickle dump string." This function serializes a Python object into a bytes-like object
+which can be stored or transmitted.
+
+pickle.loads:} It stands for "pickle load string." This function deserializes a bytes-like object created by pickle.dumps,
+reconstructing the original Python object.
+
+In simpler terms, pickle.dumps converts a Python object into a format that can be saved or sent, 
+and pickle.loads converts the serialized format back into the original Python object.

@@ -1,0 +1,22 @@
+socket:it's used for creating server and client sockets as well as for establishing connections and sending/receiving data over the network.
+
+
+threading: Threading allows the program to run multiple threads concurrently.
+Each client connection is managed in a separate thread to avoid blocking the main execution.
+
+
+queue:thread-safe, FIFO (First-In-First-Out) data structures. 
+a queue is used to store messages that need to be processed by a separate thread. 
+This helps in communication between the main thread (handling client connections) and the message processing thread.
+
+
+time: The time module provides various time-related functions. 
+it is used for introducing a short delay in the message processing thread to avoid rapid processing.
+
+
+signal: The signal module provides mechanisms to use signal handlers in Python.
+it's used to handle the SIGINT signal, which is sent when the user presses Ctrl+C to gracefully shut down the server.
+
+
+sys: The sys module provides access to some variables used or maintained by the Python interpreter. 
+it is used for gracefully exiting the program using sys.exit(0).
