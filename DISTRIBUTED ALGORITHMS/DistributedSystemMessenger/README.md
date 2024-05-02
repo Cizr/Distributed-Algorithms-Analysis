@@ -27,8 +27,8 @@ The system is designed to facilitate seamless communication among multiple clien
 
 One of the standout features of our implementation is its peer-to-peer communication model, which empowers clients to interact directly with one another without heavy reliance on the server. Moreover, we've integrated robust broadcasting functionality, allowing clients to effortlessly disseminate messages to all connected peers by leveraging a straightforward "/broadcast" command.
 
-To ensure comprehensive testing and evaluation, we've meticulously crafted three distinct network topologies: Tree, Ring, and Fully Connected. These topologies serve as invaluable tools for assessing the system's performance and resilience under varying network conditions, thereby bolstering its overall reliability and scalability.![Sans_titre](https://github.com/Cizr/Distributed-Algorithms-Analysis/assets/100844208/69e626e5-af9d-4004-bc40-daf710e9cef9)
-![Sans_titre](https://github.com/Cizr/Distributed-Algorithms-Analysis/assets/100844208/8c281236-8494-4b79-8d23-b97610bd5ed4)
+To ensure comprehensive testing and evaluation, we've meticulously crafted three distinct network topologies: Tree, Ring, and Fully Connected. These topologies serve as invaluable tools for assessing the system's performance and resilience under varying network conditions, thereby bolstering its overall reliability and scalability.
+![Sans_titre](https://github.com/Cizr/Distributed-Algorithms-Analysis/assets/100844208/0017e5ec-efd3-42ce-a7fe-793a1ff1ec75)
 
 we employed a  trick to calculate the unit of time for message propagation within the network topology. 
 Leveraging the concept of depth between nodes, we established a simple yet effective metric wherein each unit of depth between nodes corresponded to one unit of time. This approach enabled us to intuitively quantify the time required for messages to traverse from one node to another based on their relative positions within the network structure. 
