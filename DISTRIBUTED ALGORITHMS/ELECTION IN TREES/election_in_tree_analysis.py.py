@@ -66,21 +66,21 @@ class TreeElection:
         total_bits = signals + values
         return total_bits
 
-# Example usage
-n = 10  # Number of nodes in the tree
-k_star = 5  # Some constant value
-id_bits = 16  # Number of bits for node identity
+#usage
+n = 10  #Num of nodes in the tree
+k_star = 5  #Some constant value
+id_bits = 16  #Num of bits for node identity
 
 election = TreeElection(n, k_star)
 
-# Calculate the number of message transmissions
+#Calculate the number of message transmissions
 min_messages = election.elect_minimum()
 root_messages = election.elect_root()
 
 print("Elect Minimum Messages:", min_messages)
 print("Elect Root Messages:", root_messages)
 
-# Calculate the number of bits transmitted
+#Calculate the number of bits transmitted
 min_bits = election.elect_minimum_bits(id_bits)
 root_bits = election.elect_root_bits(id_bits)
 
